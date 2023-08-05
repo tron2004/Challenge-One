@@ -1,7 +1,4 @@
 
-
-//Funcion copiar() sigue sin funcionar arreglarlo para mandarlo a git 
-
 function encriptar(){
 
     let texto = document.getElementById("textoEncriptar").value;
@@ -69,7 +66,7 @@ function copiar(){
     .then(() => {
       alert("Texto copiado al portapapeles correctamente.");
     })
-    
+
 }
 
 function mostrarLike(){
