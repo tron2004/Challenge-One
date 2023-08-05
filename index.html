@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <main>
+        <div class="contenedor">
+            <div class="encriptador">
+                <textarea name="texto" id="textoEncriptar" class="texto" cols="30" rows="10" placeholder="Ingresa el texto aqui"></textarea>
+            </div>
+
+            <div class="botones">
+                <button class="btnEncriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="btnDesencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+            
+            <div class="advertencia">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="encriptado">
+
+                <img class="lupita" id="lupita" src="img/magnifying-glass.png" alt="Lupa">
+                <img class="lupita" id="like" src="img/Like.png" alt="like">
+
+                <div class="mensajeEncriptado">
+                    <h2 id="tituloMensaje">Ningún mensaje fue encontrado aun</h2>
+                    <p id="parrafo">Ingresa el texto que quieres desencriptar o encriptar</p>
+                    <p id="exito"></p>
+                </div>
+
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+                
+                <div>
+                    <button class="btnCopiar" type="button" onclick="copiar()"><img src="img/copy.png" alt=""></button>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+    </main> 
+    <footer>
+        <div class="redesSociales">
+            <a href="https://www.linkedin.com/in/mario-alejandro-ramirez-lopez-061054255/">
+                <img class="linkedin" src="img/linkedin.png" alt="linkedin">
+            </a>
+            <a href="https://github.com/tron2004">
+                <img class="github" src="img/github.png" alt="github">
+            </a>
+            <p class="copyright">&copy Copyright Mario Ramirez Lopez - 2023</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
